@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const morgan_1 = __importDefault(require("morgan"));
 const cors_1 = __importDefault(require("cors"));
-const passport_1 = __importDefault(require("passport"));
+// import passport from 'passport';
 const dotenv_1 = __importDefault(require("dotenv"));
 // Configurar dotenv para cargar variables de entorno
 dotenv_1.default.config();
@@ -37,7 +37,7 @@ class Server {
         this.app.use((0, cors_1.default)());
         this.app.use(express_1.default.json());
         this.app.use(express_1.default.urlencoded({ extended: false }));
-        this.app.use(passport_1.default.initialize());
+        // this.app.use(passport.initialize());
     }
     routes() {
         this.app.use('/', indexRoutes_1.default);
