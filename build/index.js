@@ -7,9 +7,9 @@ const express_1 = __importDefault(require("express"));
 const morgan_1 = __importDefault(require("morgan"));
 const cors_1 = __importDefault(require("cors"));
 // import passport from 'passport';
-const dotenv_1 = __importDefault(require("dotenv"));
-// Configurar dotenv para cargar variables de entorno
-dotenv_1.default.config();
+// import dotenv from 'dotenv';
+// // Configurar dotenv para cargar variables de entorno
+// dotenv.config();
 // Importar las rutas
 const cortecajaRoutes_1 = __importDefault(require("./routes/cortecajaRoutes"));
 const indexRoutes_1 = __importDefault(require("./routes/indexRoutes"));
